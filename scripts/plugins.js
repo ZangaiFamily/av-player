@@ -10,10 +10,6 @@ const plugins = [
     filename: "index.html",
     template: path.resolve(__dirname, "../index.html"),
   }),
-  new HtmlWebpackPlugin({
-    filename: "about.html",
-    template: path.resolve(__dirname, "../about.html"),
-  }),
   new CleanWebpackPlugin(),
   new TSLintPlugin({
     files: ["./src/**/*.ts"],

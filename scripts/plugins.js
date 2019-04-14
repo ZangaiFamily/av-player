@@ -1,15 +1,11 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const TSLintPlugin = require("tslint-webpack-plugin");
 const FriendlyErrorsPlugin = require("friendly-errors-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
+const routes = require('./router');
 
 const plugins = [
-  new HtmlWebpackPlugin({
-    filename: "index.html",
-    template: path.resolve(__dirname, "../index.html"),
-  }),
+  ...routes,
   new CleanWebpackPlugin(),
   new TSLintPlugin({
     files: ["./src/**/*.ts"],

@@ -4,7 +4,7 @@ const plugins = require("./plugins");
 
 module.exports = {
   entry: {
-    index: "./src/index.ts",
+    index: "./src/index.ts"
   },
   devtool: "inline-source-map",
   module: loaders,

@@ -16,7 +16,6 @@ const cssLoader = {
   use: [
     styleLoader,
     "css-loader",
-    "postcss-loader",
   ],
 };
 
@@ -26,7 +25,6 @@ const scssLoader = {
     styleLoader,
     "css-loader",
     "sass-loader",
-    "postcss-loader",
   ]
 }
 

@@ -1,0 +1,28 @@
+@import "~spectre.css";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.diy-container {
+  @extend .container;
+  @extend .columns;
+  height: 100%;
+}
+
+.diy-container-left {
+  @extend .column;
+  @extend .col-auto;
+}
+
+.diy-item {
+  @extend .hero;
+}

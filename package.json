@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/ZangaiFamily/webpack-multipage-ts#readme",
   "devDependencies": {
+    "@types/rx": "^4.1.1",
     "clean-webpack-plugin": "^2.0.1",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
